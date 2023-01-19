@@ -1,5 +1,60 @@
 body {
-  margin: 20% auto;
+  margin: 5% auto;
   width: 50%;
   height: 75%;
+  color: #d72631;
+  background-color: #a2d5c6;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  border: 5px solid #077b8a;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header"
+    "input-num"
+    "operations"
+    "clear"
+    "result";
+  text-align: center;
+  /* background-color: rgb(219, 214, 214); */
+}
+
+.header {
+  grid-area: header;
+
+}
+
+.input-num {
+  grid-area: input-num;
+}
+
+.operations {
+  grid-area: operations;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.result {
+  grid-area: result;
+}
+
+button {
+  /* border-radius: 90px; */
+  height: 35px;
+  width: 10%;
+  border-width: 3px;
+  border-color: #5c3c92;
+}
+
+.first-number,
+.second-number {
+  color: black;
 }
